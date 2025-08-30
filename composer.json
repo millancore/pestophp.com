@@ -1,0 +1,9 @@
+{
+    "require": {
+        "php": "^8.4",
+        "slim/slim": "4.*",
+        "laminas/laminas-diactoros": "^3.6",
+        "millancore/pesto": "^0.1.3",
+        "php-di/php-di": "^7.1"
+    }
+}
