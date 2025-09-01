@@ -6,7 +6,6 @@ use Slim\Factory\AppFactory;
 $container = require dirname(__DIR__) . '/bootstrap.php';
 
 AppFactory::setContainer($container);
-
 $app = AppFactory::create();
 
 $app->get('/', function (Request $request, Response $response, $args) {

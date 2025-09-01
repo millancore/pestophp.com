@@ -5,6 +5,8 @@ use Millancore\Pesto\PestoFactory;
 
 require __DIR__ . '/vendor/autoload.php';
 
+define('APP_ROOT', __DIR__);
+
 $container = new Container();
 
 $container->set('view', function () {
