@@ -157,16 +157,16 @@
         },
         {
             "name": "millancore/pesto",
-            "version": "v0.1.6",
+            "version": "v0.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/millancore/pesto.git",
-                "reference": "c32d33341619c0d798683e0a66a380288e461d81"
+                "reference": "8664645df0af8a2cbd7a0a312d564b68e6ba0447"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/millancore/pesto/zipball/c32d33341619c0d798683e0a66a380288e461d81",
-                "reference": "c32d33341619c0d798683e0a66a380288e461d81",
+                "url": "https://api.github.com/repos/millancore/pesto/zipball/8664645df0af8a2cbd7a0a312d564b68e6ba0447",
+                "reference": "8664645df0af8a2cbd7a0a312d564b68e6ba0447",
                 "shasum": ""
             },
             "require": {
@@ -199,9 +199,9 @@
             "description": "PHP View Engine",
             "support": {
                 "issues": "https://github.com/millancore/pesto/issues",
-                "source": "https://github.com/millancore/pesto/tree/v0.1.6"
+                "source": "https://github.com/millancore/pesto/tree/v0.1.7"
             },
-            "time": "2025-08-31T21:04:24+00:00"
+            "time": "2025-09-02T09:00:02+00:00"
         },
         {
             "name": "nikic/fast-route",

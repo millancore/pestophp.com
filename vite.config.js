@@ -1,7 +1,11 @@
 import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
+import liveReload from 'vite-plugin-live-reload'
 export default defineConfig({
-    plugins: [tailwindcss()],
+    plugins: [
+        tailwindcss(),
+        liveReload('resources/view/**/*.{html,php}')
+    ],
     publicDir: false,
     build: {
         outDir: './public/dist',
@@ -14,6 +18,8 @@ export default defineConfig({
         },
     },
     server: {
-
+        hmr: {
+            host: 'localhost'
+        }
     }
 })

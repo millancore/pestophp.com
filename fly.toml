@@ -1,0 +1,25 @@
+# fly.toml app configuration file generated for pestophp-com on 2025-09-01T20:46:21+02:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'pestophp-com'
+primary_region = 'fra'
+
+[build]
+	[build.args]
+	  NODE_VERSION = '24'
+      PHP_VERSION = '8.4'
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = 'stop'
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ['app']
+
+[[vm]]
+  memory = '1gb'
+  cpu_kind = 'shared'
+  cpus = 1
