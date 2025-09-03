@@ -264,8 +264,8 @@ public function truncate(
                     <div>
                         <p class="font-medium text-gray-800">2. Register it in the factory</p>
                         <pre class="mt-2"><code class="language-php">$pesto = PestoFactory::create([
-    'templatesPath' => __DIR__ . '/views',
-    'cachePath' => __DIR__ . '/cache', [
+    templatesPath: => __DIR__ . '/views',
+    cachePath: => __DIR__ . '/cache', [
         new CustomFilter(),
     ]
 ]);</code></pre>
