@@ -13,7 +13,9 @@ export default defineConfig({
         rollupOptions: {
             input: [
                 './resources/js/app.js',
-                './resources/css/app.css'
+                './resources/js/prism.js',
+                './resources/css/app.css',
+                './resources/css/prism.css'
             ],
         },
     },

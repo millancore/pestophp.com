@@ -10,7 +10,7 @@ $app = AppFactory::create();
 
 $app->get('/', function (Request $request, Response $response, $args) {
 
-    $homeView = $this->get('view')->make('home.html');
+    $homeView = $this->get('view')->make('home.php');
 
     $response->getBody()->write($homeView->toHtml());
     return $response;
