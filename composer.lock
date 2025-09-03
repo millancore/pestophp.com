@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8fb2926327b83f69872743f223b3447b",
+    "content-hash": "b7e5cce634df84a59dd541c700bd1cd5",
     "packages": [
         {
             "name": "laminas/laminas-diactoros",
@@ -157,16 +157,16 @@
         },
         {
             "name": "millancore/pesto",
-            "version": "v0.1.7",
+            "version": "v0.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/millancore/pesto.git",
-                "reference": "8664645df0af8a2cbd7a0a312d564b68e6ba0447"
+                "reference": "c0108d06da87cfa8b7ed7acf6a61e6a84e619d04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/millancore/pesto/zipball/8664645df0af8a2cbd7a0a312d564b68e6ba0447",
-                "reference": "8664645df0af8a2cbd7a0a312d564b68e6ba0447",
+                "url": "https://api.github.com/repos/millancore/pesto/zipball/c0108d06da87cfa8b7ed7acf6a61e6a84e619d04",
+                "reference": "c0108d06da87cfa8b7ed7acf6a61e6a84e619d04",
                 "shasum": ""
             },
             "require": {
@@ -199,9 +199,9 @@
             "description": "PHP View Engine",
             "support": {
                 "issues": "https://github.com/millancore/pesto/issues",
-                "source": "https://github.com/millancore/pesto/tree/v0.1.7"
+                "source": "https://github.com/millancore/pesto/tree/v0.1.8"
             },
-            "time": "2025-09-02T09:00:02+00:00"
+            "time": "2025-09-03T08:16:48+00:00"
         },
         {
             "name": "nikic/fast-route",

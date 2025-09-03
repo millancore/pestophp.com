@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+/* For Pesto template variable display */
+code .llaves::before,
+pre .llaves::before {
+    content: '{{';
+    color: #6B7280; /* gray-500 */
+}
+
+code .llaves::after,
+pre .llaves::after {
+    content: '}}';
+    color: #6B7280; /* gray-500 */
+}
