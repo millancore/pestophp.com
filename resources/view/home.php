@@ -84,8 +84,8 @@
                 <pre><code class="language-php">use MillanCore\Pesto\PestoFactory;
 
 $pesto = PestoFactory::create([
-    'templatesPath' => __DIR__ . '/views',
-    'cachePath' => __DIR__ . '/cache',
+    templatesPath: __DIR__ . '/views',
+    cachePath: __DIR__ . '/cache',
     // [ New CustomFilters(), ... ]
 ]);
 
