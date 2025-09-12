@@ -8,7 +8,7 @@ $container = require dirname(__DIR__) . '/bootstrap.php';
 AppFactory::setContainer($container);
 $app = AppFactory::create();
 
-$app->addErrorMiddleware(true, true, true);
+$app->addErrorMiddleware(false, true, true);
 
 // Add Not Found Handler
 $app->addRoutingMiddleware();
