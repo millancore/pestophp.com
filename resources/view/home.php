@@ -35,7 +35,7 @@
                     Pesto can be easily integrated with your favorite framework.
                 </p>
             </div>
-            <div class="mt-12 flex justify-center gap-8">
+            <div class="mt-12 flex flex-wrap justify-center gap-8">
                 <a href="/slim" class="flex flex-col items-center gap-2 text-gray-700 hover:text-emerald-600">
                     <img src="/img/slim.jpg" alt="Slim Framework" class="w-16 h-16 rounded-full object-cover">
                     <span class="font-bold">Slim</span>
@@ -77,7 +77,7 @@
                 </p>
             </div>
 
-            <div class="mt-12 grid md:grid-cols-2 gap-8 items-start">
+            <div class="mt-12 grid-cols-1 md:grid-cols-2 gap-8 items-start">
                 <div>
                     <h3 class="text-xl text-gray-800 font-bold">Intuitive Attributes</h3>
                     <p class="mt-2 text-gray-600">Use attributes like <code>php-foreach</code> and <code>php-if</code>
@@ -223,7 +223,7 @@ $pesto->make('view.php', ['user' => $user]);</code></pre>
             <p class="text-center mt-4 text-lg text-gray-600">Pesto provides <strong>foreach</strong> and
                 <strong>if</strong> directives, sufficient for building any view.</p>
 
-            <div class="mt-12 grid md:grid-cols-2 gap-8">
+            <div class="mt-12 grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                     <h3 class="text-xl text-gray-800 font-bold">If Attribute</h3>
                     <p class="mt-2 text-gray-600">Conditionally render blocks. <code>php-elseif</code> and <code>php-else</code>
@@ -259,7 +259,7 @@ $pesto->make('view.php', ['user' => $user]);</code></pre>
             <p class="text-center mt-4 text-lg text-gray-600">Apply transformations to variables using the pipe
                 <code>|</code> operator. You can also create your own.</p>
 
-            <div class="mt-12 grid md:grid-cols-2 gap-x-8 gap-y-12">
+            <div class="mt-12 grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12">
                 <div>
                     <h3 class="text-xl text-gray-800 font-bold">Usage</h3>
                     <pre class="mt-4"><code class="language-html">&lt;p&gt;@{{ $text | upper }}&lt;/p&gt;</code></pre>
@@ -287,7 +287,7 @@ $pesto->make('view.php', ['user' => $user]);</code></pre>
             <div class="mt-12">
                 <h3 class="text-2xl text-gray-800 font-bold text-center">Add Custom Filters</h3>
                 <p class="text-center mt-2 text-gray-600">Create a class with public methods and register it.</p>
-                <div class="mt-6 grid md:grid-cols-2 gap-6">
+                <div class="mt-6 grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                         <p class="font-medium text-gray-800">1. Create a filter class</p>
                         <pre class="mt-2"><code class="language-php">// CustomFilter.php
