@@ -1,4 +1,8 @@
-<?php $vite = new \App\Vite\ViteManager(APP_ROOT . '/public/dist'); ?>
+<?php $vite = (new \Millancore\Vite\Vite())
+    ->useBuildDirectory('dist')
+    ->useManifestFilename('.vite/manifest.json')
+    ->useHotFile(APP_ROOT . '/public/hot')
+; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,11 +29,8 @@
     <meta name="twitter:image" content="https://pestophp.com/img/template.html.png">
 
 
-    <script php-if="$vite->isRunningDevServer()"
-            type="module"
-            src="http://localhost:5173/@vite/client" ></script>
-    <link rel="stylesheet" href=" <?= $vite->get('resources/css/app.css') ?> ">
-    <link rel="stylesheet" href=" <?= $vite->get('resources/css/prism.css') ?> ">
+    {{ $vite('resources/css/app.css') | raw }}
+    {{ $vite('resources/css/prism.css') | raw }}
 </head>
 <body>
     {{ $main | slot }}
@@ -93,7 +94,7 @@
             </div>
         </footer>
     </div>
-    <script type="module" src="<?= $vite->get('resources/js/app.js') ?>"></script>
-    <script type="module" src="<?= $vite->get('resources/js/prism.js') ?>"></script>
+    {{ $vite('resources/js/app.js') | raw }}
+    {{ $vite('resources/js/prism.js') | raw }}
 </body>
 </html>

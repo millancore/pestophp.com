@@ -4,7 +4,8 @@
         "slim/slim": "4.*",
         "laminas/laminas-diactoros": "^3.6",
         "millancore/pesto": "^0.1.8",
-        "php-di/php-di": "^7.1"
+        "php-di/php-di": "^7.1",
+        "millancore/vite-manifest": "^0.1.0"
     },
    "autoload": {
      "psr-4": {

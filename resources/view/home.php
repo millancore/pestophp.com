@@ -65,6 +65,81 @@
             </div>
         </div>
     </div>
+    <div class="bg-gradient-to-br from-[#222932] to-[#006045]">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 id="benchmarks" class="text-3xl font-extrabold text-white sm:text-4xl">Benchmarks</h2>
+                <p class="mt-4 text-lg text-gray-300">
+                    Rendering time comparison — lower is better.
+                </p>
+            </div>
+
+            <div class="mt-8 flex justify-center gap-8 text-sm">
+                <div class="flex items-center gap-2">
+                    <div class="w-3 h-3" style="background-color: #008235"></div>
+                    <span class="text-gray-300">Pesto</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <div class="w-3 h-3" style="background-color: #fda4af"></div>
+                    <span class="text-gray-300">Blade</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <div class="w-3 h-3" style="background-color: #7dd3fc"></div>
+                    <span class="text-gray-300">Twig</span>
+                </div>
+            </div>
+
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <template php-foreach="$benchmarks as $benchmark">
+                    <div class="bg-white/5 p-6">
+                        <h3 class="text-lg font-bold text-white mb-6">{{ $benchmark['name'] }}</h3>
+                        <div class="flex justify-center gap-4">
+                            <template php-foreach="$benchmark['bars'] as $bar">
+                                <div class="flex flex-col items-center">
+                                    <span class="text-xs font-mono text-gray-300 mb-2">{{ $bar['value'] }}</span>
+                                    <div class="flex items-end h-36">
+                                        <div class="w-10" style="height: {{ $bar['pct'] }}%; background-color: {{ $bar['color'] }}"></div>
+                                    </div>
+                                    <span class="text-xs text-gray-400 mt-2">{{ $bar['engine'] }}</span>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                </template>
+            </div>
+
+            <div class="mt-6 bg-white/5 p-6">
+                <h3 class="text-lg font-bold text-white mb-6 text-center">Peak Memory Usage</h3>
+                <div class="flex justify-center gap-4">
+                    <template php-foreach="$memoryBars as $bar">
+                        <div class="flex flex-col items-center">
+                            <span class="text-xs font-mono text-gray-300 mb-2">{{ $bar['value'] }}</span>
+                            <div class="flex items-end h-36">
+                                <div class="w-10" style="height: {{ $bar['pct'] }}%; background-color: {{ $bar['color'] }}"></div>
+                            </div>
+                            <span class="text-xs text-gray-400 mt-2">{{ $bar['engine'] }}</span>
+                        </div>
+                    </template>
+                </div>
+            </div>
+
+            <div class="mt-8 bg-white/5 rounded-xl p-6">
+                <h3 class="text-lg font-bold text-white mb-3">Run It Yourself</h3>
+                <p class="text-sm text-gray-300 mb-4">Clone the repo and run the benchmarks on your own machine.</p>
+                <pre class="bg-black/30 rounded-lg p-4 text-sm overflow-x-auto"><code class="language-shell">git clone https://github.com/millancore/pesto.git
+cd pesto && composer install
+composer bench</code></pre>
+                <p class="text-xs text-gray-300 mt-3">
+                    Generate an HTML chart report with <code class="text-gray-100">composer bench:chart</code>
+                </p>
+            </div>
+
+            <p class="mt-6 text-center text-sm text-gray-200">
+                PHPBench — 100 iterations, 10 revolutions, 5 warmup runs. All engines with file caching enabled.
+            </p>
+        </div>
+    </div>
+
     <div class="bg-white">
         <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
             <div class="text-center">
