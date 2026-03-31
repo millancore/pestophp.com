@@ -2,5 +2,6 @@
 /vendor/
 /node_modules/
 /public/dist/
+/public/hot
 /tmp
 .php-cs-fixer.*
