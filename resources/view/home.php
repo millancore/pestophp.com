@@ -451,24 +451,18 @@ composer bench</code></pre>
                     <img src="/img/codeigniter.svg" alt="CodeIgniter" class="w-16 h-16 rounded-full object-cover">
                     <span class="font-bold">CodeIgniter</span>
                 </a>
-                <div class="flex flex-col items-center gap-2 text-gray-400">
-                    <div class="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center">
-                        <span class="text-xs text-center text-gray-500">Coming Soon</span>
-                    </div>
+                <a href="/cakephp" class="flex flex-col items-center gap-2 text-gray-700 hover:text-emerald-600">
+                    <img src="/img/cake.svg" alt="CakePHP" class="w-16 h-16 rounded-full object-cover">
                     <span class="font-bold">CakePHP</span>
-                </div>
-                <div class="flex flex-col items-center gap-2 text-gray-400">
-                    <div class="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center">
-                        <span class="text-xs text-center text-gray-500">Coming Soon</span>
-                    </div>
+                </a>
+                <a href="/symfony" class="flex flex-col items-center gap-2 text-gray-700 hover:text-emerald-600">
+                    <img src="/img/symfony.svg" alt="Symfony" class="w-16 h-16 rounded-full object-cover">
                     <span class="font-bold">Symfony</span>
-                </div>
-                <div class="flex flex-col items-center gap-2 text-gray-400">
-                    <div class="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center">
-                        <span class="text-xs text-center text-gray-500">Coming Soon</span>
-                    </div>
+                </a>
+                <a href="/laravel" class="flex flex-col items-center gap-2 text-gray-700 hover:text-emerald-600">
+                    <img src="/img/laravel.svg" alt="Laravel" class="w-16 h-16 rounded-full object-cover">
                     <span class="font-bold">Laravel</span>
-                </div>
+                </a>
             </div>
         </div>
     </div>

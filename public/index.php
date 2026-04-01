@@ -91,6 +91,30 @@ $app->get('/slim', function (Request $request, Response $response, $args) {
 
 });
 
+$app->get('/cakephp', function (Request $request, Response $response, $args) {
+
+    $cakephpView = $this->get('view')->make('cakephp.php');
+    $response->getBody()->write($cakephpView->toHtml());
+    return $response;
+
+});
+
+$app->get('/symfony', function (Request $request, Response $response, $args) {
+
+    $symfonyView = $this->get('view')->make('symfony.php');
+    $response->getBody()->write($symfonyView->toHtml());
+    return $response;
+
+});
+
+$app->get('/laravel', function (Request $request, Response $response, $args) {
+
+    $laravelView = $this->get('view')->make('laravel.php');
+    $response->getBody()->write($laravelView->toHtml());
+    return $response;
+
+});
+
 
 $app->map(['GET', 'POST', 'PUT', 'DELETE', 'PATCH'], '/{routes:.+}', function ($request, $response) {
 
