@@ -27,6 +27,86 @@
     </div>
 
 
+    <div class="bg-white border-y border-gray-100">
+        <div class="max-w-4xl mx-auto py-8 px-4 sm:px-6 lg:px-8 flex justify-center">
+            <ul class="space-y-3 text-emerald-700 font-medium text-lg inline-block">
+                <li class="flex items-start gap-2">
+                    <svg class="w-5 h-5 mt-0.5 shrink-0 text-emerald-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3"/></svg>
+                    <a href="#installation--usage" class="hover:text-emerald-500">Installation & Usage</a>
+                </li>
+                <li class="flex items-start gap-2">
+                    <svg class="w-5 h-5 mt-0.5 shrink-0 text-emerald-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+                    <div>
+                        <a href="#view-composition" class="hover:text-emerald-500">View Composition</a>
+                        <ul class="ml-5 mt-2 space-y-1 text-sm">
+                            <li class="flex items-center gap-1.5">
+                                <svg class="w-3 h-3 shrink-0 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
+                                <a href="#the-template-tag" class="hover:text-emerald-500">The <code class="text-xs bg-gray-100 px-1 py-0.5 rounded font-mono text-emerald-800">&lt;template&gt;</code> Tag</a>
+                            </li>
+                            <li class="flex items-center gap-1.5">
+                                <svg class="w-3 h-3 shrink-0 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
+                                <a href="#partials--slots" class="hover:text-emerald-500">Partials & Slots</a>
+                            </li>
+                            <li class="flex items-center gap-1.5">
+                                <svg class="w-3 h-3 shrink-0 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
+                                <a href="#nested-views" class="hover:text-emerald-500">Nested Views</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="flex items-start gap-2">
+                    <svg class="w-5 h-5 mt-0.5 shrink-0 text-emerald-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+                    <div>
+                        <a href="#control-flow" class="hover:text-emerald-500">Control Flow</a>
+                        <ul class="ml-5 mt-2 space-y-1 text-sm">
+                            <li class="flex items-center gap-1.5">
+                                <svg class="w-3 h-3 shrink-0 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
+                                <a href="#if-attribute" class="hover:text-emerald-500">If Attribute</a>
+                            </li>
+                            <li class="flex items-center gap-1.5">
+                                <svg class="w-3 h-3 shrink-0 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
+                                <a href="#loop" class="hover:text-emerald-500">Loop</a>
+                            </li>
+                            <li class="flex items-center gap-1.5">
+                                <svg class="w-3 h-3 shrink-0 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
+                                <a href="#inline" class="hover:text-emerald-500">Inline</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="flex items-start gap-2">
+                    <svg class="w-5 h-5 mt-0.5 shrink-0 text-emerald-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/></svg>
+                    <div>
+                        <a href="#filters" class="hover:text-emerald-500">Filters</a>
+                        <ul class="ml-5 mt-2 space-y-1 text-sm">
+                            <li class="flex items-center gap-1.5">
+                                <svg class="w-3 h-3 shrink-0 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
+                                <a href="#chain-filters" class="hover:text-emerald-500">Chain Filters</a>
+                            </li>
+                            <li class="flex items-center gap-1.5">
+                                <svg class="w-3 h-3 shrink-0 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
+                                <a href="#filters-with-arguments" class="hover:text-emerald-500">Filters with Arguments</a>
+                            </li>
+                            <li class="flex items-center gap-1.5">
+                                <svg class="w-3 h-3 shrink-0 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
+                                <a href="#add-filters" class="hover:text-emerald-500">Add Filters</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="flex items-start gap-2">
+                    <svg class="w-5 h-5 mt-0.5 shrink-0 text-emerald-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                    <a href="#benchmarks" class="hover:text-emerald-500">Benchmarks</a>
+                </li>
+                <li class="flex items-start gap-2">
+                    <svg class="w-5 h-5 mt-0.5 shrink-0 text-emerald-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"/></svg>
+                    <a href="#how-to-use-with" class="hover:text-emerald-500">How to use with frameworks</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
     <div class="bg-gray-50">
         <div class="max-w-4xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
             <h2 id="installation--usage" class="text-3xl font-extrabold text-gray-700 text-center">Installation &
@@ -101,7 +181,7 @@ $pesto->make('view.php', ['user' => $user]);</code></pre>
             <h2 id="view-composition" class="text-3xl font-extrabold text-gray-700 text-center">View Composition</h2>
             <p class="text-center mt-4 text-lg text-gray-600">Pesto makes it easy to reuse parts of your views.</p>
 
-            <div class="mt-12">
+            <div id="the-template-tag" class="mt-12">
                 <h3 class="text-2xl text-gray-800 font-bold">The <strong>&lt;template&gt;</strong> Tag</h3>
                 <p class="mt-2 text-gray-600">The <code>&lt;template&gt;</code> tag allows you to define
                     <code>php-*</code> attributes that will be evaluated, but the tag itself will not be included in the
@@ -186,7 +266,7 @@ $pesto->make('view.php', ['user' => $user]);</code></pre>
                 <strong>if</strong> directives, sufficient for building any view.</p>
 
             <div class="mt-12 grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
+                <div id="if-attribute">
                     <h3 class="text-xl text-gray-800 font-bold">If Attribute</h3>
                     <p class="mt-2 text-gray-600">Conditionally render blocks. <code>php-elseif</code> and <code>php-else</code>
                         must be siblings of <code>php-if</code>.</p>
@@ -194,15 +274,15 @@ $pesto->make('view.php', ['user' => $user]);</code></pre>
 &lt;p php-elseif="$user->isModerator()"&gt;Moderator&lt;/p&gt;
 &lt;p php-else&gt;Guest&lt;/p&gt;</code></pre>
                 </div>
-                <div>
-                    <h3 class="text-xl text-gray-800 font-bold">Loops</h3>
+                <div id="loop">
+                    <h3 class="text-xl text-gray-800 font-bold">Loop</h3>
                     <p class="mt-2 text-gray-600">We can use to render a list of items based on an array or iterable
                         objects.</p>
                     <pre class="mt-4"><code class="language-html">&lt;li php-foreach="$list as $item"&gt;
     @{{ $item }}
 &lt;/li&gt;</code></pre>
                 </div>
-                <div class="col md:col-span-2">
+                <div id="inline" class="col md:col-span-2">
                     <h3 class="text-xl text-gray-800 font-bold">Inline</h3>
                     <p class="mt-2 text-gray-600">Combine directives in one single tag.</p>
                     <pre class="mt-4"><code class="language-html">&lt;ul&gt;
@@ -226,12 +306,12 @@ $pesto->make('view.php', ['user' => $user]);</code></pre>
                     <h3 class="text-xl text-gray-800 font-bold">Usage</h3>
                     <pre class="mt-4"><code class="language-html">&lt;p&gt;@{{ $text | upper }}&lt;/p&gt;</code></pre>
                 </div>
-                <div>
-                    <h3 class="text-xl text-gray-800 font-bold">Chaining</h3>
+                <div id="chain-filters">
+                    <h3 class="text-xl text-gray-800 font-bold">Chain Filters</h3>
                     <pre class="mt-4"><code class="language-html">&lt;p&gt;@{{ $text | capitalize | truncate:50,... }}&lt;/p&gt;</code></pre>
                 </div>
-                <div>
-                    <h3 class="text-xl text-gray-800 font-bold">Arguments</h3>
+                <div id="filters-with-arguments">
+                    <h3 class="text-xl text-gray-800 font-bold">Filters with Arguments</h3>
                     <pre class="mt-4"><code
                                 class="language-html">&lt;p&gt;@{{ $createAt | date:'m-d-Y' }}&lt;/p&gt;</code></pre>
                 </div>
@@ -246,8 +326,8 @@ $pesto->make('view.php', ['user' => $user]);</code></pre>
                 </div>
             </div>
 
-            <div class="mt-12">
-                <h3 class="text-2xl text-gray-800 font-bold text-center">Add Custom Filters</h3>
+            <div id="add-filters" class="mt-12">
+                <h3 class="text-2xl text-gray-800 font-bold text-center">Add Filters</h3>
                 <p class="text-center mt-2 text-gray-600">Create a class with public methods and register it.</p>
                 <div class="mt-6 grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
@@ -352,7 +432,7 @@ composer bench</code></pre>
         </div>
     </div>
 
-    <div class="bg-white">
+    <div id="how-to-use-with" class="bg-white">
         <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
             <div class="text-center">
                 <h2 class="text-3xl font-extrabold text-gray-700 sm:text-4xl">
