@@ -75,6 +75,26 @@
                     </div>
                 </li>
                 <li class="flex items-start gap-2">
+                    <svg class="w-5 h-5 mt-0.5 shrink-0 text-emerald-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    <a href="#short-syntax" class="hover:text-emerald-500">Short Syntax</a>
+                </li>
+                <li class="flex items-start gap-2">
+                    <svg class="w-5 h-5 mt-0.5 shrink-0 text-emerald-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                    <div>
+                        <a href="#command-line" class="hover:text-emerald-500">Command Line</a>
+                        <ul class="ml-5 mt-2 space-y-1 text-sm">
+                            <li class="flex items-center gap-1.5">
+                                <svg class="w-3 h-3 shrink-0 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
+                                <a href="#compile" class="hover:text-emerald-500">Compile</a>
+                            </li>
+                            <li class="flex items-center gap-1.5">
+                                <svg class="w-3 h-3 shrink-0 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
+                                <a href="#lint" class="hover:text-emerald-500">Lint</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="flex items-start gap-2">
                     <svg class="w-5 h-5 mt-0.5 shrink-0 text-emerald-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/></svg>
                     <div>
                         <a href="#filters" class="hover:text-emerald-500">Filters</a>
@@ -290,6 +310,115 @@ $pesto->make('view.php', ['user' => $user]);</code></pre>
       @{{ $user->name | title }};
   &lt;/li&gt;
 &lt;/ul&gt;</code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+            <h2 id="short-syntax" class="text-3xl font-extrabold text-gray-700 text-center">Short Syntax</h2>
+            <p class="text-center mt-4 text-lg text-gray-600">Every <code>php-*</code> attribute has a shorter
+                <code>p:*</code> alias. Both forms work everywhere and can be mixed in the same template.</p>
+
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                <div>
+                    <table class="w-full text-left text-gray-800 border-collapse border border-gray-300">
+                        <thead>
+                        <tr class="bg-gray-50">
+                            <th class="border border-gray-300 py-2 px-4 font-bold">Long form</th>
+                            <th class="border border-gray-300 py-2 px-4 font-bold">Short form</th>
+                        </tr>
+                        </thead>
+                        <tbody class="font-mono text-sm">
+                        <tr><td class="border border-gray-300 py-2 px-4">php-if</td><td class="border border-gray-300 py-2 px-4">p:if</td></tr>
+                        <tr><td class="border border-gray-300 py-2 px-4">php-elseif</td><td class="border border-gray-300 py-2 px-4">p:elseif</td></tr>
+                        <tr><td class="border border-gray-300 py-2 px-4">php-else</td><td class="border border-gray-300 py-2 px-4">p:else</td></tr>
+                        <tr><td class="border border-gray-300 py-2 px-4">php-foreach</td><td class="border border-gray-300 py-2 px-4">p:foreach</td></tr>
+                        <tr><td class="border border-gray-300 py-2 px-4">php-partial</td><td class="border border-gray-300 py-2 px-4">p:partial</td></tr>
+                        <tr><td class="border border-gray-300 py-2 px-4">php-with</td><td class="border border-gray-300 py-2 px-4">p:with</td></tr>
+                        <tr><td class="border border-gray-300 py-2 px-4">php-slot</td><td class="border border-gray-300 py-2 px-4">p:slot</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <pre><code class="language-html">&lt;ul p:if="count($items) > 0"&gt;
+    &lt;li p:foreach="$items as $item"&gt;@{{ $item }}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p p:else&gt;No items&lt;/p&gt;</code></pre>
+                    <p class="mt-4 text-gray-600">If an element has both forms of the same directive, the long form
+                        wins. Since no client-side framework claims the <code>p:</code> prefix, it is safe to combine
+                        with Vue, Alpine.js, or Lit bindings.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-gray-50">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+            <h2 id="command-line" class="text-3xl font-extrabold text-gray-700 text-center">Command Line</h2>
+            <p class="text-center mt-4 text-lg text-gray-600">Pesto ships with a <code>pesto</code> binary (installed
+                at <code>vendor/bin/pesto</code>) to validate and inspect templates without rendering them.</p>
+
+            <div class="mt-8 max-w-3xl mx-auto">
+                <pre><code class="language-shell">vendor/bin/pesto help</code></pre>
+                <table class="mt-6 w-full text-left text-gray-800">
+                    <thead>
+                    <tr class="border-b border-gray-200">
+                        <th class="py-2 pr-4 font-bold">Command</th>
+                        <th class="py-2 font-bold">Description</th>
+                    </tr>
+                    </thead>
+                    <tbody class="text-sm">
+                    <tr class="border-b border-gray-100"><td class="py-2 pr-4 font-mono">pesto compile &lt;template_path&gt;</td><td class="py-2">Validate and compile a template, print the result</td></tr>
+                    <tr class="border-b border-gray-100"><td class="py-2 pr-4 font-mono">pesto lint &lt;path&gt; [&lt;path&gt;...]</td><td class="py-2">Validate template files or directories</td></tr>
+                    <tr><td class="py-2 pr-4 font-mono">pesto help</td><td class="py-2">Show the help message</td></tr>
+                    </tbody>
+                </table>
+                <p class="mt-4 text-gray-600">Both commands read the template from stdin when no path is given
+                    (or with <code>-</code>).</p>
+            </div>
+
+            <div id="compile" class="mt-12">
+                <h3 class="text-2xl text-gray-800 font-bold">Compile</h3>
+                <p class="mt-2 text-gray-600">Compiles a template and prints the resulting PHP, so you can see exactly
+                    what Pesto generates. If the template is invalid, the errors are printed and the command exits
+                    with <code>1</code>.</p>
+                <div class="mt-4">
+                    <pre><code class="language-shell">echo '&lt;li p:foreach="$items as $item" p:if="$item->visible"&gt;@{{ $item->name | title }}&lt;/li&gt;' | vendor/bin/pesto compile</code></pre>
+                    <pre class="mt-2"><code class="language-php">&lt;?php foreach($items as $item): ?&gt;&lt;?php if ($item->visible): ?&gt;&lt;li&gt;&lt;?= $__pesto->output($item->name, ['title', 'escape']) ?&gt;&lt;/li&gt;&lt;?php endif; ?&gt;&lt;?php endforeach; ?&gt;</code></pre>
+                </div>
+            </div>
+
+            <div id="lint" class="mt-12">
+                <h3 class="text-2xl text-gray-800 font-bold">Lint</h3>
+                <p class="mt-2 text-gray-600">Validates templates without rendering them: it checks for unclosed
+                    <code>@{{ }}</code> expressions, orphan <code>php-else</code>/<code>php-elseif</code> directives,
+                    unprocessed directives, and PHP syntax errors in the compiled output.</p>
+                <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <pre><code class="language-shell"># Single files or directories
+# (scanned recursively for .html and .php)
+vendor/bin/pesto lint views/home.php
+vendor/bin/pesto lint views/ emails/
+
+# Or from stdin
+echo '&lt;p php-else&gt;Guest&lt;/p&gt;' | vendor/bin/pesto lint</code></pre>
+                        <pre class="mt-2"><code class="language-shell"> ✗ &lt;stdin&gt;
+   - Orphan "php-else" directive on line 1: it must be an immediate sibling of a "php-if" element.</code></pre>
+                    </div>
+                    <div>
+                        <pre><code class="language-shell"># With --views the linter also verifies that every
+# php-partial reference exists in the templates root
+vendor/bin/pesto lint --views views/</code></pre>
+                        <pre class="mt-2"><code class="language-shell"> ✓ views/home.php
+ ✓ views/layouts/app.php
+ ✓ views/partials/nav.php
+
+Linted 3 templates: no errors found.</code></pre>
+                        <p class="mt-4 text-gray-600">The exit code is <code>0</code> when all templates pass and
+                            <code>1</code> otherwise, so <code>lint</code> fits directly into a CI pipeline.</p>
+                    </div>
                 </div>
             </div>
         </div>
